@@ -1,0 +1,18 @@
+@import "vendor/_normalize";
+@import "vendor/_lenis";
+
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_typography";
+@import "base/_helpers";
+@import "base/_animations";
+
+@import "small-components/_btn";
+
+@import "big-components/_intro";
+@import "big-components/_blocks";
+
+@import "templates/_header";
+@import "templates/_main";
+@import "templates/_section";
+@import "templates/_footer";
