@@ -1,0 +1,13 @@
+.block--just-text {
+    width: 100%;
+    max-width: 1650px;
+    @include fs-md-clamp();
+    text-align: center;
+    font-family: $f-serif;
+    // line-height: 1.1;
+
+    *:is(h2, h3, h4, h5, p) {
+        line-height: 1.1;
+        text-wrap: balance;
+    }
+}

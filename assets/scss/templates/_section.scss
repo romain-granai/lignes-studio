@@ -1,0 +1,9 @@
+.section {
+    margin: clamp(1rem, 5vw, 20rem) 0;
+}
+
+.section--just-text,
+.section--simple-list {
+    display: flex;
+    justify-content: center;
+}

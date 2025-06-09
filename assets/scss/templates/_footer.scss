@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: $f-sans-serif;
+    letter-spacing: $l-spacing-sans-serif;
+    @include fs-sm-clamp;
+    padding: 2em clamp(1rem,5vw,20rem);
+    
+    ul {
+        @include clean-list;
+    }
+}
+
+.footer__in {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.copyright {
+    margin: 0;
+}

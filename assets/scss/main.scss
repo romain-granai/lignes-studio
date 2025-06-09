@@ -7,10 +7,15 @@
 @import "base/_helpers";
 @import "base/_animations";
 
+@import "small-components/_curtain";
 @import "small-components/_btn";
 
 @import "big-components/_intro";
+@import "big-components/_nav";
 @import "big-components/_blocks";
+@import "big-components/_block-just-text";
+@import "big-components/_block-dropdowns";
+@import "big-components/_block-simple-list";
 
 @import "templates/_header";
 @import "templates/_main";
