@@ -19,7 +19,9 @@
     }
 
     h1 {
-        font-size: 10vw;
+        font-size: 15vw;
+        text-box: trim-start cap alphabetic;
+        line-height: .95;
     }
 }
 

@@ -2,12 +2,13 @@
 
 <?php 
     $shownNav = get_field('shown_navigation');
+    $isHomeActiveClass = is_front_page() ? 'active' : '';
     if($shownNav == 'full-nav'): 
 ?>
 
     <nav class="nav nav--main">
         <ul>
-            <li>
+            <li class="<?php echo $isHomeActiveClass; ?>">
                 <a href="<?php echo get_home_url(); ?>" title="Acceuil">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
                         <path part="base-color" fill="currentColor" d="M 18.52 20.58 V 27.77 H 24.85 V 17.84 H 29.64 L 15.98 4.23 L 2.36 17.84 H 7.15 V 27.77 H 13.45 V 20.58 H 18.52 Z"></path>

@@ -34,7 +34,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: .15em;
-    padding: 5cqw;
+    padding: 3cqw 5cqw;
     width: 100%;
     cursor: pointer;
     border: none;
@@ -45,6 +45,7 @@
     h3 {
         text-box: trim-both cap alphabetic;
         opacity: .85;
+        line-height: 1;
     }
 }
 
@@ -75,11 +76,13 @@
 
 .dropdown__content {
     height: 0;
-    transition: all .3s ease-in-out;
+    transition: height .3s ease-in-out;
     overflow: clip;
 
     >div {
         padding: 0 5cqw 5cqw;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
     }
 }
 
@@ -97,6 +100,10 @@
     .dropdown__content {
         height: auto;
         height: calc-size(auto, size);
+
+        > div {
+            opacity: 1;
+        }
     }
 }
 
